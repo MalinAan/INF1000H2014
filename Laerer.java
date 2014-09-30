@@ -24,7 +24,7 @@ class Laerer{
 		}
 	}
 
-	//Registrerer oppmote til studenten
+	//Registrerer oppmote til studentene
 	public void taOpprop(){
 		Scanner tastatur = new Scanner(System.in);
 		for(int i = 0; i < mineStudenter.length; i ++){
