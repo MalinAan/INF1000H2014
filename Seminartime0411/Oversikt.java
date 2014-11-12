@@ -44,7 +44,7 @@ class Oversikt{
 	public void skrivUtStudenter(){
 		for(Student s : studenter.values()){
 			HashMap<String, Fag> studFag = s.returnerFag();
-			System.out.println(s.toString() + " tar folgenden fag:");
+			System.out.println(s.toString() + " tar folgende fag:");
 			for(Fag f : studFag.values()){
 				System.out.println(f.toString());
 			}
