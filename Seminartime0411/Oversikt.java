@@ -1,5 +1,4 @@
 import java.util.Scanner;
-//import java.util.File;
 import java.io.*;
 import java.util.HashMap;
 
@@ -8,10 +7,6 @@ class Oversikt{
 	private HashMap<String, Fag> fag = new HashMap<String, Fag>();
 
 	public static void main(String [] args) throws Exception{
-		/*Student s = new Student("Elsie");
-		Fag f = new Fag("INF1000");
-		s.leggTilFag(f);
-		s.leggTilFag(f);*/
 		Oversikt oversikt = new Oversikt();
 		oversikt.lesFraFil();
 		oversikt.skrivUtStudenter();
@@ -49,7 +44,7 @@ class Oversikt{
 	public void skrivUtStudenter(){
 		for(Student s : studenter.values()){
 			HashMap<String, Fag> studFag = s.returnerFag();
-			System.out.println(s.toString());
+			System.out.println(s.toString() + " tar folgenden fag:");
 			for(Fag f : studFag.values()){
 				System.out.println(f.toString());
 			}
