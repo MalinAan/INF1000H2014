@@ -17,5 +17,9 @@ class Fag{
 	public String toString(){
 		return fagkode;
 	}
+
+	public HashMap<String, Student> returnerStudenter(){
+		return studenter;
+	}
 	
 }
